@@ -1,0 +1,48 @@
+.singleTile {
+  margin: 1rem;
+  width: 20%;
+  height: 40vh;
+  box-shadow: 1px 1px 5px black;
+}
+.singleTile__fade {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6));
+  width: 100%;
+  height: 100%;
+}
+.singleTile__title {
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  -webkit-text-fill-color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+.singleTile__imageContainer {
+  width: 70%;
+  height: 40%;
+  margin-bottom: 2rem;
+}
+.singleTile__imageContainer img {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+.singleTile__button {
+  width: 50%;
+  height: 4rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  background-color: rgba(230, 237, 236, 0.7);
+  transition: all 0.2s ease;
+}
+.singleTile__button:hover {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.singleTile__button Link {
+  text-decoration: none;
+}/*# sourceMappingURL=SingleTile.css.map */

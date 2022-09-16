@@ -1,0 +1,75 @@
+.RecipePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.RecipePage__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+  box-shadow: 0 4px 5px -2px gray;
+}
+.RecipePage__heading {
+  font-size: 5rem;
+  text-shadow: 0 0 2rem white;
+}
+.RecipePage__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5rem 0;
+}
+.RecipePage__sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
+}
+.RecipePage__sidebar h2 {
+  margin: 0;
+  font-size: 4rem;
+}
+.RecipePage__sidebar hr {
+  margin: 4rem 0;
+  width: 80%;
+}
+.RecipePage__ingredientsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.RecipePage__ingredient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2.5rem;
+  width: 27%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+.RecipePage__recipe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+}
+.RecipePage__recipeContainer h2 {
+  font-size: 4rem;
+}
+.RecipePage__method {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+.RecipePage__method span {
+  font-weight: bold;
+}/*# sourceMappingURL=RecipePage.css.map */
