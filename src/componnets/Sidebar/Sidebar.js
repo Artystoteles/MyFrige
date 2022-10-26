@@ -22,7 +22,7 @@ const Sidebar = ({ ingredients, handleSelected, selected }) => {
               return val;
             }
           })
-          .splice(0, 11)
+
           .map((ingr) => {
             return (
               <button
