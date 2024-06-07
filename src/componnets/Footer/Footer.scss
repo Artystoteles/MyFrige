@@ -1,0 +1,30 @@
+@import "../../App.scss";
+
+.Footer {
+  width: 100%;
+  &__content {
+    @include flex-center(flex-start, flex-start);
+    width: 100%;
+    margin-top: 10rem;
+    border-top: 1px solid black;
+    padding: 5rem;
+  }
+  &__logo,
+  &__links,
+  &__contact {
+    width: 33%;
+    @include flex-center(flex-start, flex-start);
+    p {
+      font-size: 1.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__copyright {
+    @include flex-center(center, center);
+    width: 100%;
+  }
+}

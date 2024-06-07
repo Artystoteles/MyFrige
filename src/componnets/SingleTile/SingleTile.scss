@@ -1,12 +1,15 @@
+@import "../../App.scss";
+
 .singleTile {
   margin: 1rem;
   width: calc(100% / 5);
   height: 40vh;
   box-shadow: 1px 1px 5px black;
+  background-repeat: no-repeat;
+  background-size: cover;
   &__fade {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include flex-center(center, space-around);
+
     flex-direction: column;
     background: linear-gradient(
       rgba(255, 255, 255, 0.3),
@@ -16,9 +19,9 @@
     height: 100%;
   }
   &__title {
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
     -webkit-text-fill-color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   &__imageContainer {

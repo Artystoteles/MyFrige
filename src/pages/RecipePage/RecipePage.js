@@ -30,32 +30,36 @@ const RecipePage = () => {
           <h2>Ingredients:</h2>
           <hr></hr>
           <div className="RecipePage__ingredientsContainer">
-            {dish.ingredients.map((ingr) => {
-              return (
-                <div
-                  key={dish.ingredients.indexOf(ingr)}
-                  className="RecipePage__ingredient"
-                >
-                  {ingr.name}
-                </div>
-              );
-            })}
+            <ul className="RecipePage__ingredientsList">
+              {dish.ingredients.map((ingr) => {
+                return (
+                  <li
+                    key={dish.ingredients.indexOf(ingr)}
+                    className="RecipePage__ingredient"
+                  >
+                    {ingr.amount} {ingr.unit} {ingr.name}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
         <div className="RecipePage__recipe">
           <div className="RecipePage__recipeContainer">
             <h2>Recipe:</h2>
             <hr></hr>
-            {dish.method.map((mthd) => {
-              return (
-                <div
-                  key={dish.method.indexOf(mthd)}
-                  className="RecipePage__method"
-                >
-                  <span>{dish.method.indexOf(mthd) + 1}.</span> {mthd}
-                </div>
-              );
-            })}
+            <ol>
+              {dish.method.map((mthd) => {
+                return (
+                  <li
+                    key={dish.method.indexOf(mthd)}
+                    className="RecipePage__method"
+                  >
+                    <span>{mthd}</span>
+                  </li>
+                );
+              })}
+            </ol>
           </div>
         </div>
       </div>

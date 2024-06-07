@@ -1,7 +1,8 @@
+@import "../../App.scss";
+
 .sidebar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center(center, center);
+
   flex-direction: column;
   position: sticky;
   top: 2rem;
@@ -20,9 +21,8 @@
     padding: 1rem;
   }
   &__ingredients {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center(center, center);
+
     flex-wrap: wrap;
     width: 100%;
   }
@@ -59,12 +59,10 @@
     }
   }
   &__button {
+    @include flex-center(center, center);
     position: relative;
     opacity: 0.7;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 5rem;
     height: 5rem;
     background: none;
@@ -77,10 +75,7 @@
     &--active {
       position: relative;
       cursor: pointer;
-      background-color: green;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center(center, center);
       width: 5rem;
       height: 5rem;
       background: none;

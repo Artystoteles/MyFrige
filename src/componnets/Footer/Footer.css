@@ -1,0 +1,56 @@
+.App {
+  background-color: #e6edec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.home__title {
+  margin-top: 6rem;
+  font-size: 5rem;
+}
+.home__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer {
+  width: 100%;
+}
+.Footer__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 10rem;
+  border-top: 1px solid black;
+  padding: 5rem;
+}
+.Footer__logo, .Footer__links, .Footer__contact {
+  width: 33%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Footer__logo p, .Footer__links p, .Footer__contact p {
+  font-size: 1.5rem;
+}
+.Footer__logo a, .Footer__links a, .Footer__contact a {
+  text-decoration: none;
+  color: black;
+}
+.Footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}/*# sourceMappingURL=Footer.css.map */

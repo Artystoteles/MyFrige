@@ -1,3 +1,28 @@
+.App {
+  background-color: #e6edec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.home__title {
+  margin-top: 6rem;
+  font-size: 5rem;
+}
+.home__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .RecipePage {
   display: flex;
   align-items: center;
@@ -18,7 +43,7 @@
 }
 .RecipePage__content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   margin: 5rem 0;
@@ -26,10 +51,9 @@
 .RecipePage__sidebar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 25%;
+  width: 30%;
 }
 .RecipePage__sidebar h2 {
   margin: 0;
@@ -43,24 +67,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
+}
+.RecipePage__ingredientsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 .RecipePage__ingredient {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 2.5rem;
-  width: 27%;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  font-size: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0.5rem 0.5rem -3rem;
+  font-size: 2rem;
 }
 .RecipePage__recipe {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
   width: 65%;
 }
 .RecipePage__recipeContainer h2 {

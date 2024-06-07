@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Logo from "../images/Logo.svg";
 import RecipeSection from "../componnets/RecipeSection/RecipeSection";
+import Footer from "../componnets/Footer/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         </div>
       </div>
       <RecipeSection />
+      <Footer />
     </div>
   );
 };

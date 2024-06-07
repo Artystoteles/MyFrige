@@ -38,14 +38,6 @@ const Sidebar = ({ ingredients, handleSelected, selected }) => {
                 <i>
                   <img alt={ingr} src={`../../images/${ingr}.svg`} />
                 </i>
-                <span
-                  onClick={(e) => handleSelected(e)}
-                  className={
-                    selected.includes(ingr)
-                      ? "sidebar__delete--active"
-                      : "sidebar__delete"
-                  }
-                ></span>
               </button>
             );
           })}
