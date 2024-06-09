@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Logo from "../images/Logo.svg";
 import RecipeSection from "../componnets/RecipeSection/RecipeSection";
 import Footer from "../componnets/Footer/Footer";
@@ -9,7 +8,7 @@ const Home = () => {
       <div className="home">
         <div className="home__content">
           <h1 className="home__title">Welcome to</h1>
-          <img src={Logo} />
+          <img alt="Logo" src={Logo} />
         </div>
       </div>
       <RecipeSection />

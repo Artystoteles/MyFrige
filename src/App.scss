@@ -22,5 +22,18 @@
   }
   &__content {
     @include flex-center(center, center);
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      img {
+        @media (max-width: 1200px) {
+          width: 80%;
+        }
+      }
+    }
   }
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
 }

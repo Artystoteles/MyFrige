@@ -2,11 +2,14 @@
 
 .singleTile {
   margin: 1rem;
-  width: calc(100% / 5);
+  width: 20%;
   height: 40vh;
   box-shadow: 1px 1px 5px black;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
   &__fade {
     @include flex-center(center, space-around);
 

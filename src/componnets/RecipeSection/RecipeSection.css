@@ -2,12 +2,19 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
 }
 .recipes__recipes {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 1200px) {
+  .recipes__recipes {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .recipes__title {
   font-size: 3rem;
@@ -16,4 +23,9 @@
   display: flex;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1200px) {
+  .recipes__container {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=RecipeSection.css.map */

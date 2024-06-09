@@ -2,17 +2,29 @@
 
 .Footer {
   width: 100%;
+  margin-top: 5rem;
   &__content {
     @include flex-center(flex-start, flex-start);
     width: 100%;
-    margin-top: 10rem;
     border-top: 1px solid black;
-    padding: 5rem;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
   &__logo,
   &__links,
   &__contact {
     width: 33%;
+    img {
+      @media (max-width: 1200px) {
+        width: 50%;
+      }
+    }
+    @media (max-width: 1200px) {
+      @include flex-center(center, center);
+
+      width: 100%;
+    }
     @include flex-center(flex-start, flex-start);
     p {
       font-size: 1.5rem;

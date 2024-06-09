@@ -22,6 +22,11 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1200px) {
+  .home__content {
+    flex-direction: column;
+  }
+}
 
 .singleTile {
   margin: 1rem;
@@ -30,6 +35,11 @@
   box-shadow: 1px 1px 5px black;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 1200px) {
+  .singleTile {
+    width: 100%;
+  }
 }
 .singleTile__fade {
   display: flex;

@@ -22,24 +22,56 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1200px) {
+  .home__content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1200px) and (max-width: 1200px) {
+  .home__content img {
+    width: 80%;
+  }
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
 
 .Footer {
   width: 100%;
+  margin-top: 5rem;
 }
 .Footer__content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 10rem;
   border-top: 1px solid black;
-  padding: 5rem;
+}
+@media (max-width: 1200px) {
+  .Footer__content {
+    flex-direction: column;
+  }
 }
 .Footer__logo, .Footer__links, .Footer__contact {
   width: 33%;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+}
+@media (max-width: 1200px) {
+  .Footer__logo img, .Footer__links img, .Footer__contact img {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .Footer__logo, .Footer__links, .Footer__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .Footer__logo p, .Footer__links p, .Footer__contact p {
   font-size: 1.5rem;

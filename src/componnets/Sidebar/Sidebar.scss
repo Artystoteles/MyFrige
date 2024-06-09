@@ -2,13 +2,17 @@
 
 .sidebar {
   @include flex-center(center, center);
-
   flex-direction: column;
   position: sticky;
   top: 2rem;
   width: 30%;
   height: 100%;
   margin-right: 3rem;
+  @media (max-width: 1200px) {
+    width: 100%;
+    position: static;
+    margin: 0;
+  }
   &__title {
     margin-bottom: 4rem;
     font-size: 3rem;

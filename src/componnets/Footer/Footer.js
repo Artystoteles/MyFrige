@@ -10,7 +10,7 @@ const Footer = () => {
           {" "}
           <img src={Logo} />
         </div>
-        <div className="Footer__links">a</div>
+        <div className="Footer__links"></div>
         <div className="Footer__contact">
           <p>
             Feel free to contact me:{" "}
